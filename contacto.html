@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafeteria | SASS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Raleway:wght@400;700;900&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="build/css/app.css" />
+  </head>
+
+  <body>
+    <header class="header header-contacto">
+      <div class="contenedo-header contenedor">
+        <div class="barra">
+          <div class="logo">
+            <img src="./build/img/logo.svg" alt="Cafeteria logo" />
+          </div>
+
+          <nav class="nav-principal">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="proceso.html">Proceso</a>
+            <a href="menu.html">Menú</a>
+            <a href="galeria.html">Galería</a>
+            <a class="activo" href="contacto.html">Contacto</a>
+          </nav>
+        </div>
+        <div class="texto-header">
+          <h1>Mejores granos, mejor café</h1>
+        </div>
+      </div>
+    </header>
+
+    <main class="contenedor contenido-principal">
+      <h2><span>Reserva tu</span>Mesa</h2>
+
+      <div class="contenido-contacto">
+        <form class="formulario">
+          <div class="campo">
+            <label for="nombre">Nombre</label>
+            <input type="text" placeholder="Tu nombre" id="nombre" required />
+          </div>
+
+          <div class="campo">
+            <label for="email"> Email</label>
+            <input type="email" placeholder="Tu email" id="email" required />
+          </div>
+
+          <div class="campo">
+            <label for="personas">Número de personas</label>
+            <select name="personas" id="personas" required>
+              <option value="" disabled selected>-- Seleccione</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="mas">+4</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="hora">Hora</label>
+            <input
+              type="time"
+              name="hora"
+              id="hora"
+              min="8:30"
+              max="19:00"
+              required
+            />
+          </div>
+
+          <div class="campo">
+            <label for="fecha">fecha</label>
+            <input type="date" name="fecha" id="fecha" required />
+          </div>
+
+          <div class="campo">
+            <input type="submit" value="Enviar" />
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="contenedor contenedor-footer">
+        <div class="footer-box ubicacion">
+          <h3>Ubicación</h3>
+          <p>Tachira - Venezuela</p>
+          <p>La Grita - Calle 2 con carrera 3</p>
+        </div>
+        <div class="footer-box reservacion">
+          <h3>Reservación</h3>
+          <p>+584247366909</p>
+          <a href="tel:+584247366909">Llama</a>
+        </div>
+        <div class="footer-box horarios">
+          <h3>Horarios</h3>
+          <p>lun-jue: 11:00 - 22:00</p>
+          <p>vie-sab: 09:00 - 23:00</p>
+          <p>dom: Cerrado</p>
+        </div>
+      </div>
+      <p class="copyright">
+        Todos los derechos reservados | La Cafeteria&copy;
+      </p>
+    </footer>
+  </body>
+</html>

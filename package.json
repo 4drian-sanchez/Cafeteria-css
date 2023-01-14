@@ -1,0 +1,35 @@
+{
+  "name": "11.0.2-cafeteria",
+  "version": "1.0.0",
+  "description": "Aprendiendo Gulp, SASS, css grid, ect.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adrian Sanchez",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "cssnano": "^5.1.12",
+    "gulp-avif": "^1.1.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-libsquoosh": "^1.1.2",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-webp": "^4.0.1",
+    "i": "^0.3.7",
+    "postcss": "^8.4.14",
+    "sass": "^1.52.3"
+  },
+  "browsersList": [
+    "last 1 version",
+    "> 1%"
+  ],
+  "browserslist": [
+    "defaults"
+  ]
+}
